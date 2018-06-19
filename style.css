@@ -1,0 +1,395 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,700');
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+/* Variable values*/
+@media screen and (max-width: 600px) {
+    .title {
+        font-size: 9vw;
+    }
+    .subtitle {
+        font-size: 4vw;
+    }
+    .hero-title {
+        font-size: 5vw;
+    }
+    .about-title {
+        font-size: 4vw;
+    }
+    .about-body {
+        font-size: 3vw;
+    }
+    .contact-title {
+        font-size: 5.5vw;
+    }
+    .contact-btn {
+        font-size: 4vw;
+    }
+    .form-control {
+        font-size: 3vw;
+    }
+}
+@media screen and (min-width: 601px) {
+    .title {
+        font-size: 4vw;
+    }
+    .subtitle {
+        font-size: 1.7vw;
+    }
+    .hero-title {
+        font-size: 4vw;
+    }
+    .hero-img {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .about-title {
+        font-size: 4vw;
+        margin-top: 70px;
+    }
+    .about-body {
+        font-size: 2.5vw;
+        box-shadow: 0 10px 20px rgba(3,27,78,.1);
+    }
+    .contact-btn {
+        font-size: 1.3vw;
+    }
+}
+
+body {
+    background-color: #191919;
+    margin-bottom: 100px;
+}
+
+.title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #f1f1f1;
+    margin: 0 auto;
+    text-align: center;
+    
+    -webkit-animation: flicker-in-1 2s linear both;
+    animation: flicker-in-1 2s linear both;
+}
+.subtitle {
+    font-family: "Nunito", sans-serif;
+    font-weight: 200;
+    color: #dbdbdb;
+    margin: 0 auto;
+    text-align: center;
+    
+    -webkit-animation: flicker-in-1 2s linear both;
+    animation: flicker-in-1 2s linear both;
+}
+
+.forums-btn {
+    background-color: #f77716;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.forums-btn:hover {
+    background-color: #e5731d; 
+    color: white;
+}
+.forums-btn:active {
+    background-color: #e5731d; 
+    color: white;
+}
+
+.projects-btn {
+    background-color: #62d3f5;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.projects-btn:hover {
+    background-color: #e5731d; 
+    color: white;
+}
+.projects-btn:active {
+    background-color: #e5731d; 
+    color: white;
+}
+
+.hero-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    padding-left: 2vw;
+    padding-top: 2vw;
+    color: white;
+}
+
+.navbar {
+    margin-bottom: 50px;
+    padding-top: 20px;
+    padding-left: 10vw;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-family: "Nunito", sans-serif;
+    color: lightgray;
+    -moz-transition: color .3s ease-in;
+    -webkit-transition: color .3s ease-in;
+    -o-transition: color .3s ease-in;
+    transition: color .3s ease-in;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.about-title {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    margin: 0 auto;
+    text-align: center;
+    width: 100vw;
+    padding-bottom: 10px;
+}
+.about-body {
+    font-family: "Nunito", sans-serif;
+    color: #dbdbdb;
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.contact-card {
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 550px;
+    
+    box-shadow: 0 10px 20px rgba(3,27,78,.1);
+    outline: 0px solid;
+}
+
+.contact-title {
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.about-row {
+    margin-bottom: 50px;
+}
+
+.form-control {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.contact-btn {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Animations */
+@-webkit-keyframes flicker-in-1 {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  10.1% {
+    opacity: 1;
+  }
+  10.2% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  20.1% {
+    opacity: 1;
+  }
+  20.6% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  30.1% {
+    opacity: 1;
+  }
+  30.5% {
+    opacity: 1;
+  }
+  30.6% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 0;
+  }
+  45.1% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 1;
+  }
+  55.1% {
+    opacity: 0;
+  }
+  57% {
+    opacity: 0;
+  }
+  57.1% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  60.1% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  65.1% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  75.1% {
+    opacity: 0;
+  }
+  77% {
+    opacity: 0;
+  }
+  77.1% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  85.1% {
+    opacity: 0;
+  }
+  86% {
+    opacity: 0;
+  }
+  86.1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes flicker-in-1 {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  10.1% {
+    opacity: 1;
+  }
+  10.2% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  20.1% {
+    opacity: 1;
+  }
+  20.6% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  30.1% {
+    opacity: 1;
+  }
+  30.5% {
+    opacity: 1;
+  }
+  30.6% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 0;
+  }
+  45.1% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 1;
+  }
+  55.1% {
+    opacity: 0;
+  }
+  57% {
+    opacity: 0;
+  }
+  57.1% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  60.1% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  65.1% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  75.1% {
+    opacity: 0;
+  }
+  77% {
+    opacity: 0;
+  }
+  77.1% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  85.1% {
+    opacity: 0;
+  }
+  86% {
+    opacity: 0;
+  }
+  86.1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
